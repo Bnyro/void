@@ -1,0 +1,13 @@
+#hero-container {
+  display: flex;
+  max-width: 70vw;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+#hero-links {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}

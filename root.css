@@ -1,0 +1,76 @@
+:root {
+  --base: #222;
+  --text: #ccc;
+  --accent: #62b086;
+  --radius: 0.5rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  accent-color: var(--accent);
+}
+
+html {
+  font-family: "Courier New", Courier, monospace;
+  background-color: var(--base);
+  color: var(--text);
+}
+
+main {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  overflow-x: none;
+  height: 100vh;
+}
+
+section {
+  min-height: 100vh;
+  max-width: 100%;
+  scroll-snap-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.button,
+button {
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  background-color: var(--accent);
+  color: var(--base);
+  outline: none;
+  border: none;
+}
+
+.button:hover,
+button:hover {
+  filter: brightness(0.8);
+}
+
+input[type="text"] {
+  padding: 0.6rem 0.9rem;
+  background: var(--base);
+  color: var(--text);
+  outline: none;
+  border: 0.2rem solid var(--accent);
+  border-radius: var(--radius);
+}
+
+.scroll-snap {
+  opacity: 0;
+  transition: 2s;
+}
+
+.appear {
+  opacity: 1;
+}

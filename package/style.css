@@ -1,0 +1,12 @@
+#package-info {
+  max-width: 90%;
+  align-items: start;
+  margin: 1rem auto;
+  gap: 0.4rem;
+}
+
+#package-info > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
