@@ -1,13 +1,19 @@
 #hero-container {
   display: flex;
-  max-width: 70vw;
+  max-width: min(90vw, 50rem);
   justify-content: space-between;
   align-items: center;
-  gap: 3rem;
+  gap: 2rem;
+}
+
+#logo {
+  width: min(30vw, 12rem);
+  min-height: 5vh;
 }
 
 #hero-links {
   display: flex;
   gap: 0.5rem;
   margin-top: 0.5rem;
+  flex-wrap: wrap;
 }

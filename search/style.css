@@ -2,6 +2,13 @@ main {
   margin: 2rem 0;
 }
 
+#search-container {
+  margin: 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
 #search-container .button {
   padding: 0.7rem 1rem;
 }
