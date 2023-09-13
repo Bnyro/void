@@ -9,7 +9,8 @@ const humanFileSize = (size) => {
 
 const displayInfo = (title, value) => {
   const formattedValue = title == "revision" ? value :
-    title == "homepage" ? `<a href=${value}>${value}</a>`:
+    title == "homepage" ? `<a href="${value}">${value}</a>`:
+    title == "name" ? `<a href="https://github.com/void-linux/void-packages/blob/master/srcpkgs/${value}/template">${value}</a>`:
     !isNaN(value) ? humanFileSize(value) :
     title == "rundepends" ? value.map((pkg) =>
         `<a href="?name=${pkg.split(">=")[0]}">${pkg}</a>`
