@@ -15,6 +15,7 @@ html {
   font-family: "Courier New", Courier, monospace;
   background-color: var(--base);
   color: var(--text);
+  scroll-behavior: smooth;
 }
 
 section {

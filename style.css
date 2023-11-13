@@ -1,5 +1,6 @@
 main {
   scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
   overflow-y: scroll;
   overflow-x: none;
   height: 100vh;
