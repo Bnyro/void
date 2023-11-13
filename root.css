@@ -17,17 +17,8 @@ html {
   color: var(--text);
 }
 
-main {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  overflow-x: none;
-  height: 100vh;
-}
-
 section {
-  min-height: 100vh;
   max-width: 100%;
-  scroll-snap-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;

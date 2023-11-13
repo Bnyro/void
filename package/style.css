@@ -1,3 +1,7 @@
+section {
+  min-height: 90vh;
+}
+
 #package-info {
   max-width: 90%;
   align-items: start;
